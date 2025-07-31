@@ -23,19 +23,23 @@ const Header = () => {
             <Image src={assets.hand_icon} alt='' className='w-6'/>
       </motion.h3>
 
-    <motion.h1 
-      initial={{ y: -30, opacity: 0 }} 
-      whileInView={{ y: 0, opacity: 1 }}
-      transition={{duration: 0.8, delay: 0.5}}
-    className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>front end developer based in Melbourne, Aus</motion.h1>
+<motion.h1 
+  initial={{ y: -30, opacity: 0 }} 
+  whileInView={{ y: 0, opacity: 1 }}
+  transition={{ duration: 0.8, delay: 0.5 }}
+  className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
+  eLearning & Digital Experience Lead 
+</motion.h1>
 
-    <motion.p 
-      initial={{opacity: 0 }} 
-      whileInView={{opacity: 1 }}
-      transition={{duration: 0.6, delay: 0.7}}
-    className='max-w-2xl mx-auto font-Ovo'>
-       Expert in front-end development, LMS administration, and digital learning solutions. Passionate about UX, automation, and creating engaging, accessible experiences through SAM and ADDIE methodologies.
-    </motion.p>
+<motion.p 
+  initial={{ opacity: 0 }} 
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 0.6, delay: 0.7 }}
+  className='max-w-2xl mx-auto font-Ovo'>
+  Experienced digital leader with strong front-end development skills, advanced LMS expertise, and a proven record in digital strategy, automation, and cross-platform integration. Delivered full-site revamps and learning solutions that boosted engagement by 70% and significantly improved SEO.  
+  Let’s connect if you're looking for someone to elevate your digital learning platforms or drive meaningful user experiences.
+</motion.p>
+
 
     <div className='flex flex-col sm:flex-row items-center gap-4 mt-10'>
 
@@ -47,13 +51,14 @@ const Header = () => {
         className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent'>
             Contact me <Image src={assets.right_arrow_white} alt='' className='w-4'/></motion.a>
         
+        {/* 
         <motion.a 
            initial={{ y: 30, opacity: 0 }} 
            whileInView={{ y: 0, opacity: 1 }}
            transition={{duration: 0.6, delay: 1.2}}
         href="/sample-resume.pdf" download 
         className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black'>
-            My Resume <Image src={assets.right_download_icon} alt='' className='w-4'/></motion.a>
+            My Resume <Image src={assets.right_download_icon} alt='' className='w-4'/></motion.a> */}
 
     </div>
 
